@@ -161,9 +161,12 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Context\ApplicationDataContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AccController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\FinController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ISController.cs" />
     <Compile Include="Controllers\OtherController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -233,6 +236,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Other\Faq.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\IS\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Acc\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fin\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
