@@ -8,6 +8,33 @@
 body {
 }
 
-.darkify {
-    background-color: #4e5d6c
+.solidify {
+    background-color: lightseagreen;
+    padding-top: 8px;
+    padding-bottom: 10.5px;
+    border: solid 2px black;
+    border-radius: 12px;
+}
+
+.btn-primary:hover {
+    background-color: darkcyan !important;
+}
+
+.navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: darkcyan !important;
+}
+
+.navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus
+{
+    background-color: darkcyan !important;
+}
+
+.navbar-collapse, .navbar-inverse .navbar-form
+{
+    border-color: darkcyan !important;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus
+{
+    background-color: darkcyan !important;
 }

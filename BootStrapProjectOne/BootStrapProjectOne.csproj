@@ -182,7 +182,8 @@
     <Content Include="Context\Images\biking.jpg" />
     <Content Include="Context\Images\emma.png" />
     <Content Include="Context\Images\jace.png" />
-    <Content Include="Context\Images\kyle.png" />
+    <Content Include="Context\Images\KyleEdit-4.jpg" />
+    <Content Include="Context\Images\Oberender1.jpg" />
     <Content Include="Context\Images\sharktank.jpg" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
