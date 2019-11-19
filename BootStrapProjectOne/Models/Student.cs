@@ -25,9 +25,8 @@ namespace BootStrapProjectOne.Models
         public string lName { get; set; }
 
         [Display(Name = "Major")]
-        [Required]
-        public string Major { get; set; } //this will be a drop down
-
+        public string MAJOR_ID { get; set; } //this will be a drop down
+        
         [Display(Name = "Headshot")]
         public Image Picture { get; set; }
 
