@@ -22,5 +22,10 @@ namespace BootStrapProjectOne.Controllers
         {
             return View();
         }
+
+        public ActionResult CreateFaq()
+        {
+            return View();
+        }
     }
 }
