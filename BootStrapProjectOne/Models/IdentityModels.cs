@@ -8,4 +8,4 @@ namespace BootStrapProjectOne.Models
         public string LastName { get; set; }
         public string Email { get; set; }
     }
-}
+} //adding a test comment
