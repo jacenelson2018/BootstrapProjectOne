@@ -9,6 +9,6 @@ namespace BootStrapProjectOne.Models
     public class Student
     {
         [Key]
-        public int? StudID { get; set; }//here is my change
+        public int? StudID { get; set; }//here is my change, and anotherOne
     }
 }
