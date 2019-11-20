@@ -43,3 +43,8 @@ body {
 {
     width: 200px;
 }
+
+.right {
+    position: absolute;
+    right: 30px;
+}
