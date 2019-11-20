@@ -31,6 +31,13 @@ namespace BootStrapProjectOne.Controllers
             if (obj != null)
             {
                 obj.StudID = myModel.StudID;
+                obj.fName = myModel.fName;
+                obj.lName = myModel.lName;
+                obj.Internship_Year = myModel.Internship_Year;
+                obj.Company = myModel.Company;
+                obj.MAJOR_ID = myModel.MAJOR_ID;
+                obj.Experience = myModel.Experience;
+                obj.Picture = myModel.Picture;
             }
 
             return View("Index", lstaStudent);
