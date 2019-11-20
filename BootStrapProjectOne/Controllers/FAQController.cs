@@ -8,13 +8,13 @@ namespace BootStrapProjectOne.Controllers
 {
     
     
-    public class OtherController : Controller
+    public class FAQController : Controller
     {
         public static List<Question> lstQuestions = new List<Question>()
         {
-            new Question{ sQuestion = "What interested you in the first place about the company you interned for?" },
-            new Question{ sQuestion = "What was the hardest part about trying to decide which company to intern at?" },
-            new Question{ sQuestion = "What if I get an internship with a company and then decide that I don't like it?" }
+            new Question{ Question_ID = 1, sQuestion = "What interested you in the first place about the company you interned for?" },
+            new Question{ Question_ID = 2, sQuestion = "What was the hardest part about trying to decide which company to intern at?" },
+            new Question{ Question_ID = 3, sQuestion = "What if I get an internship with a company and then decide that I don't like it?" }
         };
         
         
@@ -37,7 +37,7 @@ namespace BootStrapProjectOne.Controllers
             if (ModelState.IsValid)
             {
                 lstQuestions.Add(oQuestion);
-                return View("FAQ", lstQuestions);
+                return View("Faq", lstQuestions);
             }
             else //If validation fails, we will essentially reload the AddQuestion page, with the errors thrown and displayed
             {
@@ -69,11 +69,11 @@ namespace BootStrapProjectOne.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Faq", "Other");
+                    return RedirectToAction("Faq", "FAQ");
                 }
             }
 
-            return RedirectToAction("Faq", "Other");
+            return RedirectToAction("Faq", "FAQ");
         }
 
         public ActionResult FullWidth()
