@@ -167,7 +167,7 @@
     <Compile Include="Controllers\FinController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ISController.cs" />
-    <Compile Include="Controllers\OtherController.cs" />
+    <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -229,7 +229,7 @@
     <Content Include="Views\Fin\addStudent.cshtml" />
     <Content Include="Views\Fin\EditStudent.cshtml" />
     <Content Include="Views\Fin\DeleteStudent.cshtml" />
-    <Content Include="Views\Other\EditQuestion.cshtml" />
+    <Content Include="Views\FAQ\EditQuestion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -263,7 +263,7 @@
     <Content Include="Views\Other\SideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Other\Faq.cshtml" />
+    <Content Include="Views\FAQ\Faq.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\IS\Index.cshtml" />
@@ -272,7 +272,7 @@
     <Content Include="Views\Acc\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Other\CreateFaq.cshtml" />
+    <Content Include="Views\FAQ\CreateFaq.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
