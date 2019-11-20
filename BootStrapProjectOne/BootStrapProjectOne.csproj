@@ -184,11 +184,17 @@
   <ItemGroup>
     <Content Include="Context\Images\alumni.jpg" />
     <Content Include="Context\Images\biking.jpg" />
+    <Content Include="Context\Images\City.jpg" />
+    <Content Include="Context\Images\Difference.jpg" />
     <Content Include="Context\Images\emma.png" />
+    <Content Include="Context\Images\Inspire.jpg" />
+    <Content Include="Context\Images\Interview.jpg" />
+    <Content Include="Context\Images\Interview2.jpg" />
     <Content Include="Context\Images\jace.png" />
     <Content Include="Context\Images\KyleEdit-4.jpg" />
     <Content Include="Context\Images\Oberender1.jpg" />
     <Content Include="Context\Images\sharktank.jpg" />
+    <Content Include="Context\Images\Stock.jpg" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -219,6 +225,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Fin\Index.cshtml" />
+    <Content Include="Views\Fin\addStudent.cshtml" />
+    <Content Include="Views\Fin\EditStudent.cshtml" />
+    <Content Include="Views\Fin\DeleteStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -259,9 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Acc\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Fin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Other\CreateFaq.cshtml" />
