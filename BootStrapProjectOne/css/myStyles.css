@@ -48,3 +48,7 @@ body {
     position: absolute;
     right: 30px;
 }
+
+.largeTextBox {
+    width: 800px;
+}

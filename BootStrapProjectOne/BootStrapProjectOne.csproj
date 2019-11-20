@@ -229,6 +229,7 @@
     <Content Include="Views\Fin\addStudent.cshtml" />
     <Content Include="Views\Fin\EditStudent.cshtml" />
     <Content Include="Views\Fin\DeleteStudent.cshtml" />
+    <Content Include="Views\Other\EditQuestion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

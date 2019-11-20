@@ -1,36 +1,37 @@
 ﻿@model BootStrapProjectOne.Models.Question
 
 @{
-    ViewBag.Title = "Create New FAQ";
+    ViewBag.Title = "Edit Question";
 }
 
-<h2>Create Faq</h2>
-<link href="~/css/myStyles.css" rel="stylesheet" />
+<h2>Edit Question</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>New Frequently Asked Question</h4>
+        <h4>Question</h4>
         <hr />
         @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Question_ID)
+
         <div class="form-group">
             @Html.LabelFor(model => model.sQuestion, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.sQuestion, new { @class = "largeTextBox" })
+                @Html.TextBoxFor(model => model.sQuestion, new { @class = "largeTextBox"})
                 @Html.ValidationMessageFor(model => model.sQuestion)
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10" style="margin-top: 20px;">
-                <input type="submit" value="Create" class="btn btn-default" />
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
-            <div class="col-md-offset-2" style="margin-top: 80px;">
-                @Html.ActionLink("Back to List", "FAQ", "Other")
-            </div>
+        <div class="col-md-offset-2" style="margin-top: 80px;">
+            @Html.ActionLink("Back to List", "Faq", "Other")
+        </div>
     </div>
 }
 
