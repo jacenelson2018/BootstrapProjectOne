@@ -42,6 +42,7 @@
                     <li id="contact">
                         @Html.ActionLink("Contact", "Index", "Contact")
                     </li>
+
                     <li id="portfolio" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Major <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -60,6 +61,10 @@
 
                         </ul>
                     </li>
+
+                    <li id="faq">
+                        @Html.ActionLink("FAQ", "Faq", "Other")
+                    </li>
                     
                     <li id="other" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
@@ -70,11 +75,6 @@
                             <li id="sidebarpage">
                                 @Html.ActionLink("Sidebar Page", "Sidebar", "Other")
                             </li>
-                            <li id="faq">
-                                @Html.ActionLink("FAQ", "Faq", "Other")
-                            </li>
-                            
-                            
                         </ul>
                     </li>
                 </ul>
