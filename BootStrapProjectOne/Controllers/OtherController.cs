@@ -17,15 +17,6 @@ namespace BootStrapProjectOne.Controllers
             new Question{ sQuestion = "What if I get an internship with a company and then decide that I don't like it?" }
         };
         
-        public ActionResult FullWidth()
-        {
-            return View();
-        }
-        
-        public ActionResult SideBar()
-        {
-            return View();
-        }
         
         public ActionResult Faq()
         {
@@ -53,6 +44,46 @@ namespace BootStrapProjectOne.Controllers
                 var errors = ModelState.Values.SelectMany(v => v.Errors);
                 return View(oQuestion);
             }
+        }
+
+        //Edit
+        [HttpGet] //Display Edit form
+        public ActionResult EditQuestion(int? iCode)
+        {
+            Question oQuestion = lstQuestions.Find(x => x.Question_ID == iCode);
+
+            return View(oQuestion);
+        }
+
+        [HttpPost]
+        public ActionResult EditQuestion(Question thisModel)
+        {
+            var obj = lstQuestions.FirstOrDefault(x => x.Question_ID == thisModel.Question_ID); //We set this object obj equal to the Question_ID it finds in the list
+
+            if (obj != null)
+            {
+                if (ModelState.IsValid)
+                {
+                    obj.Question_ID = thisModel.Question_ID;
+                    obj.sQuestion = thisModel.sQuestion;
+                }
+                else
+                {
+                    return RedirectToAction("Faq", "Other");
+                }
+            }
+
+            return RedirectToAction("Faq", "Other");
+        }
+
+        public ActionResult FullWidth()
+        {
+            return View();
+        }
+        
+        public ActionResult SideBar()
+        {
+            return View();
         }
     }
 }
