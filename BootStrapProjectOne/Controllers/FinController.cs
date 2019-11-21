@@ -37,7 +37,7 @@ namespace BootStrapProjectOne.Controllers
                 obj.Company = myModel.Company;
                 obj.MAJOR_ID = myModel.MAJOR_ID;
                 obj.Experience = myModel.Experience;
-                obj.Picture = myModel.Picture;
+                //obj.Picture = myModel.Picture; test
             }
 
             return View("Index", lstaStudent);
